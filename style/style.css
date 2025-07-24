@@ -1,0 +1,172 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/* Header Section */
+.header_section {
+  max-width: 1140px;
+  margin: 0px auto;
+}
+/* Navigation Style */
+.logo img {
+  max-width: 135px;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 120px;
+}
+.navigation_bar {
+  display: flex;
+  gap: 3rem;
+}
+.navigation .navigation_bar li {
+  list-style: none;
+}
+.nav_link {
+  text-decoration: none;
+  color: #8987a1;
+  font-size: 25px;
+}
+#home,
+#cart {
+  color: #252432;
+}
+button {
+  background-color: white;
+  border: none;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.057);
+  border-radius: 5px;
+  font-size: 25px;
+}
+/* Banner section */
+.banner {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.banner_title {
+  font-size: 4rem;
+  color: #e95a08;
+  margin: 0px;
+}
+.banner_description {
+  font-size: 1.37rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: justify;
+  margin-bottom: 0px;
+}
+.banner img {
+  width: 100%;
+}
+/* Plant section style */
+.plants_section {
+  max-width: 1140px;
+  margin: 0px auto;
+}
+.section_content {
+  margin-top: 120px;
+  text-align: center;
+}
+.section_title {
+  font-size: 3.12rem;
+  margin: 0px;
+}
+.section_subtitle {
+  margin: 1rem 0px;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.card_img {
+  width: 270px;
+  margin-bottom: 1.3rem;
+}
+.plant_name {
+  font-size: 1.37rem;
+  color: #111111;
+  text-align: center;
+  font-weight: 600px;
+  margin-bottom: 10px;
+}
+.plant_rate {
+  font-size: 1.37rem;
+  font-weight: bold;
+  color: #111111;
+  text-align: center;
+  margin-bottom: 1.3rem;
+}
+.card_button {
+  width: 100%;
+  background-color: #e95a08;
+  padding: 20px;
+  font-size: 1rem;
+  font-weight: 500px;
+  color: white;
+}
+.card_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+/* Flower lover section style */
+.lover_section {
+  display: flex;
+}
+.badge {
+  width: 286px;
+  display: flex;
+  justify-content: end;
+  z-index: 1;
+  margin-bottom: -200px;
+}
+.lover_section ul li {
+  list-style: decimal;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 576px) {
+  * {
+    max-width: 480px;
+    margin: 0px auto;
+  }
+  /* Header section */
+  /* navigation Style */
+  .navigation {
+    margin: 1rem;
+    gap: 220px;
+  }
+  .logo img {
+    max-width: 63px;
+  }
+  .navigation_bar li {
+    display: none;
+  }
+
+  /* banner style */
+  .banner {
+    flex-direction: column-reverse;
+  }
+
+  .banner_title {
+    font-size: 1.5rem;
+    margin-bottom: 13px;
+  }
+  /* plant Section responsive */
+  .card_container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  .card_img {
+    max-width: 100%;
+  }
+  .card_button {
+    width: 100%;
+  }
+  .banner img {
+    width: 100%;
+  }
+}
