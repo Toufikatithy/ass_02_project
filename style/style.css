@@ -130,7 +130,7 @@ main {
   background-image: url(../assets/flower-store.png);
   background-size: contain;
   background-repeat: no-repeat;
-  height: 597px;
+  height: 400px;
 }
 .lover_img img {
   width: 200px;
@@ -164,8 +164,11 @@ main {
   }
   /* Header section */
   /* navigation Style */
+  .cart {
+    font-size: 10px;
+  }
   .navigation {
-    margin: 1rem;
+    margin: 1rem 0px;
     gap: 220px;
   }
   .logo img {
@@ -183,14 +186,30 @@ main {
   .banner_title {
     font-size: 1.5rem;
     margin-bottom: 13px;
+    margin-top: 0px;
+  }
+  .banner_description,
+  .section_subtitle {
+    font-size: 1rem;
   }
   /* plant Section responsive */
+  .section_title {
+    font-size: 1.5rem;
+  }
+  .section_content {
+    margin-top: 60px;
+  }
+  .plant_rate {
+    margin-bottom: 10px;
+  }
+
   .card_container {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
   }
   .card_img {
     max-width: 100%;
+    margin-bottom: 10px;
   }
   .card_button {
     width: 100%;
@@ -202,6 +221,7 @@ main {
   /* flower */
   .lover_section {
     flex-direction: column;
+    margin-top: 50px;
   }
   .lover_img img {
     display: none;
@@ -215,10 +235,13 @@ main {
     margin-top: 0px;
   }
   .lover_content_title {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .lover_content_description {
     font-size: 1rem;
     padding-left: 20px;
+  }
+  .lover_content_description li {
+    font-size: 0.8rem;
   }
 }
