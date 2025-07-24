@@ -159,7 +159,7 @@ main {
 /* Mobile Responsive */
 @media screen and (max-width: 576px) {
   * {
-    max-width: 480px;
+    max-width: 350px;
     margin: 0px auto;
   }
   /* Header section */
