@@ -130,7 +130,7 @@ main {
   background-image: url(../assets/flower-store.png);
   background-size: contain;
   background-repeat: no-repeat;
-  height: 400px;
+  height: 587px;
 }
 .lover_img img {
   width: 200px;
@@ -149,11 +149,100 @@ main {
 .lover_content_description {
   font-size: 20px;
   color: rgba(0, 0, 0, 0.5);
-  line-height: ;
   margin-top: 20px;
 }
 .lover_content_description li {
   margin-top: 20px;
+}
+
+/*Latest Deals Section(Challenge Part)*/
+.latest_deals {
+  max-width: 1140px;
+  margin: 0px auto;
+}
+.deals_title {
+  font-size: 3.12rem;
+
+  margin: 0px;
+  margin-top: 140px;
+  text-align: center;
+}
+.deals_description {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+  text-align: center;
+  margin: 1.5rem 15rem;
+}
+.deals_container {
+  display: flex;
+  height: 320px;
+  justify-content: space-between;
+}
+.deals_left {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.deals_right {
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.55) 50%,
+      rgba(0, 0, 0, 0.55) 50%
+    ),
+    url("../assets/deal-zabo.png");
+  width: 66%;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  text-align: center;
+  align-content: center;
+}
+
+.deals_left_content-1 {
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.55) 50%,
+      rgba(0, 0, 0, 0.55) 50%
+    ),
+    url("../assets/deal-bloom.png");
+  width: 100%;
+  height: 48%;
+  background-repeat: no-repeat;
+  border-radius: 14px;
+  text-align: center;
+  align-content: center;
+}
+.deals_left_content-2 {
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.55) 50%,
+      rgba(0, 0, 0, 0.55) 50%
+    ),
+    url("../assets/deal-ana.png");
+  width: 100%;
+  height: 48%;
+  background-repeat: no-repeat;
+  border-radius: 14px;
+  text-align: center;
+  align-content: center;
+}
+.discund {
+  font-size: 1.5rem;
+  color: rgb(251, 250, 250);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+#zaba {
+  font-size: 2.5rem;
+}
+#zaba_shop {
+  font-size: 1.5rem;
+}
+.shop_link {
+  font-size: 1rem;
+  font-weight: 700;
+  color: azure;
 }
 
 /* Mobile Responsive */
@@ -229,6 +318,7 @@ main {
   .lover_img {
     width: 100%;
     margin-bottom: 0px;
+    height: 400px;
   }
   .lover_content {
     width: 100%;
@@ -243,5 +333,43 @@ main {
   }
   .lover_content_description li {
     font-size: 0.8rem;
+  }
+  /* latest Deals Section */
+  .deals_title {
+    font-size: 2rem;
+    margin-top: 80px;
+  }
+  .deals_description {
+    margin: 1rem 0px;
+    font-size: 1rem;
+  }
+
+  .deals_container {
+    flex-direction: column;
+    justify-content: start;
+    height: 750px;
+    gap: 1rem;
+  }
+  .deals_left {
+    gap: 1rem;
+  }
+  .deals_left_content-1,
+  .deals_left_content-2 {
+    height: 200px;
+  }
+  .deals_left {
+    width: 100%;
+  }
+  .deals_right {
+    width: 100%;
+    height: 200px;
+  }
+  .discund,
+  #zaba {
+    font-size: 1.5rem;
+  }
+  .shop_link,
+  #zaba_shop {
+    font-size: 1rem;
   }
 }
