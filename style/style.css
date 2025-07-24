@@ -62,7 +62,13 @@ button {
 .banner img {
   width: 100%;
 }
+/* main section */
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
 /* Plant section style */
+
 .plants_section {
   max-width: 1140px;
   margin: 0px auto;
@@ -114,17 +120,40 @@ button {
 }
 /* Flower lover section style */
 .lover_section {
+  margin-top: 210px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.badge {
-  width: 286px;
-  display: flex;
-  justify-content: end;
-  z-index: 1;
-  margin-bottom: -200px;
+.lover_img {
+  width: 58%;
+  background-image: url(../assets/flower-store.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 597px;
+}
+.lover_img img {
+  width: 200px;
+  margin-top: -90px;
+  margin-left: 400px;
 }
 .lover_section ul li {
-  list-style: decimal;
+  list-style: disc;
+}
+.lover_content {
+  width: 40%;
+}
+.lover_content_title {
+  font-size: 50px;
+}
+.lover_content_description {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: ;
+  margin-top: 20px;
+}
+.lover_content_description li {
+  margin-top: 20px;
 }
 
 /* Mobile Responsive */
@@ -168,5 +197,28 @@ button {
   }
   .banner img {
     width: 100%;
+  }
+  /* main section */
+  /* flower */
+  .lover_section {
+    flex-direction: column;
+  }
+  .lover_img img {
+    display: none;
+  }
+  .lover_img {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  .lover_content {
+    width: 100%;
+    margin-top: 0px;
+  }
+  .lover_content_title {
+    font-size: 2rem;
+  }
+  .lover_content_description {
+    font-size: 1rem;
+    padding-left: 20px;
   }
 }
