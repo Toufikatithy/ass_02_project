@@ -159,17 +159,17 @@ main {
 /* Mobile Responsive */
 @media screen and (max-width: 576px) {
   * {
-    max-width: 350px;
+    max-width: 320px;
     margin: 0px auto;
   }
   /* Header section */
   /* navigation Style */
   .cart {
-    font-size: 10px;
+    font-size: 1rem;
   }
   .navigation {
     margin: 1rem 0px;
-    gap: 220px;
+    gap: 140px;
   }
   .logo img {
     max-width: 63px;
@@ -186,7 +186,7 @@ main {
   .banner_title {
     font-size: 1.5rem;
     margin-bottom: 13px;
-    margin-top: 0px;
+    margin-top: 1.3rem;
   }
   .banner_description,
   .section_subtitle {
