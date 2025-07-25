@@ -1,3 +1,12 @@
+/* Custom Style */
+.custom_font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -88,7 +97,7 @@ button {
   margin: 0px;
 }
 .section_subtitle {
-  margin: 1rem 0px;
+  margin: 2rem 0px;
   font-size: 22px;
   color: rgba(0, 0, 0, 0.5);
 }
@@ -180,7 +189,7 @@ button {
   color: rgba(0, 0, 0, 0.5);
   margin-top: 20px;
   text-align: center;
-  margin: 1.5rem 15rem;
+  margin: 2rem 15rem;
 }
 .deals_container {
   display: flex;
