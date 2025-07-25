@@ -42,11 +42,17 @@ button {
 }
 /* Banner section */
 .banner {
+  width: 100%;
   display: flex;
   align-items: end;
   justify-content: space-between;
 }
-
+.banner_content {
+  width: 50%;
+}
+.banner_img {
+  width: 50%;
+}
 .banner_title {
   font-size: 4rem;
   color: #e95a08;
@@ -63,10 +69,10 @@ button {
   width: 100%;
 }
 /* main section */
-main {
+/* main {
   max-width: 1140px;
   margin: 0 auto;
-}
+} */
 /* Plant section style */
 
 .plants_section {
@@ -120,6 +126,8 @@ main {
 }
 /* Flower lover section style */
 .lover_section {
+  max-width: 1140px;
+  margin: 0 auto;
   margin-top: 210px;
   display: flex;
   align-items: center;
@@ -176,7 +184,7 @@ main {
 }
 .deals_container {
   display: flex;
-  height: 320px;
+  height: 400px;
   justify-content: space-between;
 }
 .deals_left {
@@ -194,6 +202,7 @@ main {
     url("../assets/deal-zabo.png");
   width: 66%;
   background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 20px;
   text-align: center;
   align-content: center;
@@ -209,6 +218,7 @@ main {
   width: 100%;
   height: 48%;
   background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 14px;
   text-align: center;
   align-content: center;
@@ -244,10 +254,51 @@ main {
   font-weight: 700;
   color: azure;
 }
+/* Join section style */
+.join {
+  background-image: url("..//assets/news-letter-bg.png");
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+}
+.join_title {
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+}
+#email {
+  width: 644px;
+  height: 50px;
+  border: none;
+}
+.div {
+  display: flex;
+  gap: 0px;
+}
+.subscribe_btn {
+  width: 186px;
+  height: 50px;
+  border: none;
+  border-radius: 0px;
+  color: white;
+  background-color: #e95a08;
+}
+input::placeholder {
+  padding: 30px;
+}
 
 /* Mobile Responsive */
 @media screen and (max-width: 576px) {
-  * {
+  .latest_deals,
+  .lover_section,
+  .plants_section,
+  .header_section {
     max-width: 320px;
     margin: 0px auto;
   }
@@ -271,7 +322,12 @@ main {
   .banner {
     flex-direction: column-reverse;
   }
-
+  .banner_content {
+    width: 100%;
+  }
+  .banner_img {
+    width: 100%;
+  }
   .banner_title {
     font-size: 1.5rem;
     margin-bottom: 13px;
@@ -307,7 +363,7 @@ main {
     width: 100%;
   }
   /* main section */
-  /* flower */
+  /* flower lover */
   .lover_section {
     flex-direction: column;
     margin-top: 50px;
@@ -371,5 +427,35 @@ main {
   .shop_link,
   #zaba_shop {
     font-size: 1rem;
+  }
+  /* jon section */
+  .join {
+    margin-top: 0px;
+    height: 300px;
+    padding: 40px 20px;
+    flex-direction: row;
+  }
+
+  .join_title {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .div {
+    flex-direction: row;
+  }
+
+  #email,
+  .subscribe_btn {
+    width: 100%;
+    height: 45px;
+    font-size: 0.95rem;
+  }
+
+  .subscribe_btn {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+    width: 40%;
   }
 }
